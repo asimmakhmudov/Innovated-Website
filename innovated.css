@@ -1,0 +1,80 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.menu {
+    display: inline-flex;
+    padding: 35px;
+}
+.menu  h1 {
+    font-size: 25px;
+    
+}
+.menu ul{
+    word-spacing: 80px; 
+    right: 10%;
+    position: absolute;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+}
+.home {
+    color: #6C63FF;
+    text-decoration: underline;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #686867;
+    font-size: 20px;
+}
+.menu ul li a:hover {
+    color: black;
+}
+.contact {
+    border: none;
+    background-color: #6C63FF;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.contact:hover {
+    background-color: #5148fd;
+    color: #fff;
+}
+.mainsection {
+    padding: 60px;
+
+}
+img {
+    right: 10%;
+    position: absolute; 
+}
+h2 {
+    font-size: 60px;
+    width: 500px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+span {
+    color: #5148fd;
+}
+.text{
+    width: 500px;
+    color: #686867;
+    font-size: 20px;
+}
+.play {
+    color: #5148fd;
+    font-size: 30px;
+}
+.watch {
+    font-size: 30px;
+    color: #686867;
+}
+.texts {
+    padding: 95px;
+}
