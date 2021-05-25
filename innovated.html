@@ -12,27 +12,32 @@
     <title>Innovated</title>
 </head>
 <body>
-    <div class="menu">
-            <h1>INNOVATED</h1>
-            <ul>
-                
-                <li><a href="#" ><span class="home">Home</span></a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Feature</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Pricing</a></li>
-                <input class="contact" type="button" value="Contact">
-            </ul>
-    </div>
-    <div class="mainsection">
-        <img src="undraw_version_control_re_mg66.svg" alt="Innovated">
-        <div class="texts">
-        <h2>We target the audience with our <span>ideas</span>.</h2>
-        <br>
-        <p class="text">Advertising is relied upon to impact the states of mind, expectations and conduct of the customer's clients and in this way increment.</p>
-        <br>
-        <a href="#"><i class="fas fa-play-circle play"><span class="watch"> Watch Video </span> </i></a>
+    <div class="menu-container">
+        <div class="menu">
+                <h1>INNOVATED</h1>
+                <nav >
+                <ul id="menuList">
+                    <li><a href="#"><span class="home">Home</span></a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#"><span>Contact</span></a></li>
+                </ul>
+                </nav>
+                <img class="menu-icon" src="icons8-menu.svg" onclick="toggleMenu()">
         </div>
     </div>
+    <div class="mainsection">
+        <div class="row1">
+        <h2>We target the audience with our <span class="idea">ideas</span>.</h2><br>
+        <p class="text">Advertising is relied upon to impact the states of mind, expectations and conduct of the customer's clients and in this way increment.</p><br>
+        <a href="#"><i class="fas fa-play-circle play"><span class="watch"> Watch Video </span> </i></a>
+        </div>
+        <div class="row2">
+            <img src="undraw_version_control_re_mg66.svg" alt="Innovated">
+        </div>
+    </div>
+    <script src="innovated.js"></script>
 </body>
 </html>
