@@ -1,6 +1,10 @@
 *{
     font-family: 'Rubik', sans-serif;
     margin: 0;
+    box-sizing: border-box;
+}
+body {
+    transition: 0.2s linear;
 }
 .menu-container {
     width: 100%;
@@ -12,6 +16,7 @@
 }
 .menu {
     width: 100%;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
 }
@@ -35,7 +40,7 @@ nav ul li {
 }
 .home {
     color: #6C63FF;
-    text-decoration: underline 4px;
+    text-decoration: underline 2px #6C63FF;
 }
 .menu ul li a {
     text-decoration: none;
@@ -49,7 +54,7 @@ nav ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px 0;
+    margin: 10px 0;
     padding-left: 8%; 
     padding-right: 8%;
 }
@@ -91,11 +96,13 @@ h2 {
 .row2 img {
     width: 90%;
 }
+#menuList{transition: 0.3s linear;
+}
 @media only screen and (max-width:600px) {
     nav ul {
         width: 100%;
         position: absolute;
-        background: #5148fd;
+        background: #4a45af;
         top: 75px;
         right: 0;
         z-index: 2;
@@ -117,17 +124,66 @@ h2 {
     }
     .menu-container .menu-icon {
         display: block;
-        
     }
     h2 {
         font-size: 200%;
     }
     #menuList {
         overflow: hidden;
-        transition: 0.5s;
+        
+        
     }
     .mainsection {
         flex-direction: column-reverse;
         margin: 50px 0;
+       
     }
+    .label {
+        margin: 15px;
+    }
+}
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked + .label {
+    background-color: rgb(102, 2, 102);
+}
+.label {
+    background-color: rgb(49, 49, 49);
+    padding: 2px;
+    height: 26px;
+    width: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+.fa-sun {
+    color: #f39c12;
+}
+.fa-moon {
+    color: #f1c40f;
+}
+.ball {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.2s linear;
+}
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+body.dark {
+    background-color: #262626;
+    color: wheat;
+}
+body.menuT ul li a {
+    color: wheat;
 }
