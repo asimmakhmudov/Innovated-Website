@@ -2,21 +2,25 @@
     font-family: 'Rubik', sans-serif;
     margin: 0;
     box-sizing: border-box;
+    
 }
 body {
     transition: 0.2s linear;
 }
 .menu-container {
+    display: flex;
+    height: 100%;
+    padding: 22px;
+    align-items: center;
     width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
     box-sizing: border-box;
     overflow: hidden;
+    justify-content: center;
 }
 .menu {
+    height: 30px;
     width: 100%;
-    margin-bottom: 30px;
+    align-items: center;
     display: flex;
     align-items: center;
 }
@@ -24,16 +28,21 @@ body {
     font-size: 25px;
 }
 .menu-container .menu-icon {
-    font-size: 25px;
+    height: 40px !important;
+    width: 40px !important;
     cursor: pointer;
     display: none;
-    color: #5148fd;
+    color: wheat !important;
 }
 nav {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
     flex: 1;
-    text-align: right;
+    display: flex;
 }
 nav ul li {
+    height: 100%;
     list-style: none;
     display: inline-block;
     margin-right: 30px;
@@ -99,6 +108,10 @@ h2 {
 #menuList{transition: 0.3s linear;
 }
 @media only screen and (max-width:600px) {
+    .menu  h1 {
+        font-size: 25px;
+        color: wheat;
+    }
     nav ul {
         width: 100%;
         position: absolute;
@@ -121,6 +134,10 @@ h2 {
     }
     .home:hover {
         color: black;
+    }
+    .menu-container {
+        transition: 3s;
+        background: #4a45af;
     }
     .menu-container .menu-icon {
         display: block;
@@ -180,9 +197,11 @@ h2 {
 .checkbox:checked + .label .ball {
     transform: translateX(24px);
 }
+*.dark {
+    color: wheat;
+}
 body.dark {
     background-color: #262626;
-    color: wheat;
 }
 body.menuT ul li a {
     color: wheat;
