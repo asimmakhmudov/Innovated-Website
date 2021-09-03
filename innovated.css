@@ -7,6 +7,14 @@
 body {
     transition: 0.2s linear;
 }
+::-webkit-scrollbar{
+    width: 5px;
+    background: antiquewhite;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#4a45af, wheat ,#4a4af5, wheat, #4a45af);
+}
+
 .menu-container {
     display: flex;
     height: 100%;
@@ -107,7 +115,7 @@ h2 {
 }
 #menuList{transition: 0.3s linear;
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 1024px) {
     .menu  h1 {
         font-size: 25px;
         color: wheat;
