@@ -2,6 +2,7 @@
     font-family: 'Rubik', sans-serif;
     margin: 0;
     box-sizing: border-box;
+    /* border: 2px solid red; */
     
 }
 body {
@@ -115,6 +116,86 @@ h2 {
 }
 #menuList{transition: 0.3s linear;
 }
+/* Secon Pg */
+
+.page2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+}
+.sectxt {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+.sechead {
+    font-size: 25px;
+    width: auto;
+}
+.sectxt p {
+    width: auto;
+    padding: 15px;
+    max-width: 700px;
+    font-size: 12px;
+}
+.seccontent {
+    height: 90%;
+    width: 100%;
+}
+.secmain {
+    display: flex;
+    height: auto;
+    height: 100%;
+}
+.skills {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.secphoto img {
+    width: 700px !important;
+    height: 450px !important;
+}
+
+.s1 {
+    color: red;
+}
+.s2 {
+    color: orange;
+}
+.s3 {
+    color: green;
+}
+.s4 {
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1024px) {
     .menu  h1 {
         font-size: 25px;
@@ -165,6 +246,24 @@ h2 {
     }
     .label {
         margin: 15px;
+    }
+    .page2 {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: auto;
+    }
+    .secmain {
+        display: flex;
+        flex-flow: column;
+        height: auto;
+        height: 100%;
+    }
+    .secphoto img {
+        width: 100%;
+        height: 80%;
     }
 }
 .checkbox {
