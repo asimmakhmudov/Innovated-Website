@@ -7,50 +7,46 @@
 }
 body {
     transition: 0.2s linear;
+    /* height: 500vh; */
 }
 ::-webkit-scrollbar{
     width: 5px;
     background: antiquewhite;
 }
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(#4a45af, wheat ,#4a4af5, wheat, #4a45af);
-}
-
-.menu-container {
-    display: flex;
-    height: 100%;
-    padding: 22px;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-    justify-content: center;
+    background: #4a45af;
 }
 .menu {
-    height: 30px;
-    width: 100%;
+    height: auto;
+    width: 100%;    
     align-items: center;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5;
+    background: #fff;
+    padding: 30px;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 .menu  h1 {
     font-size: 25px;
+    color: #4a45af;
 }
-.menu-container .menu-icon {
+.menu-icon {
     height: 40px !important;
     width: 40px !important;
     cursor: pointer;
     display: none;
-    color: wheat !important;
+    color: #262626;
 }
-nav {
-    height: 100%;
-    width: 100%;
+ul {
     justify-content: center;
-    flex: 1;
+    align-items: center;
     display: flex;
 }
-nav ul li {
+ul li {
     height: 100%;
     list-style: none;
     display: inline-block;
@@ -58,11 +54,10 @@ nav ul li {
 }
 .home {
     color: #6C63FF;
-    text-decoration: underline 2px #6C63FF;
 }
 .menu ul li a {
     text-decoration: none;
-    color: #686867;
+    color: black;
     font-size: 16px;
 }
 .menu ul li a:hover {
@@ -73,8 +68,8 @@ nav ul li {
     justify-content: space-between;
     align-items: center;
     margin: 10px 0;
-    padding-left: 8%; 
-    padding-right: 8%;
+    padding: 0 8%; 
+    height: 90vh;
 }
 .row1 {
     flex-basis: 40%;
@@ -116,113 +111,93 @@ h2 {
 }
 #menuList{transition: 0.3s linear;
 }
-/* Secon Pg */
 
-.page2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: auto;
-}
-.sectxt {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px;
-}
-.sechead {
-    font-size: 25px;
-    width: auto;
-}
-.sectxt p {
-    width: auto;
-    padding: 15px;
-    max-width: 700px;
-    font-size: 12px;
-}
-.seccontent {
-    height: 100%;
+
+.community {
+    height: 50vh;
     width: 100%;
-}
-.secmain {
-    display: flex;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-.skills {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    padding: 0 8%;
+    display: flex;
+}
+.comLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
     width: 100%;
-}
-.skills img {
     height: 100%;
-    max-height: 400px;
-    width: 90%;
-    max-width: 400px;
 }
-.secphoto {
-    height: auto;
+.comLeft .comText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
 }
-.secphoto img {
-    width: 700px;
-    height: 450px;
+.comLeft .comText p {
+    font-size: 24px;
+    color: #5148fd;
+    margin-bottom: 15px;
+}
+.comLeft .comText span {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 15px;
+}
+.comLeft .comText h3 {
+    font-size: 30px;
+    color: #262626;
+    margin-bottom: 15px;
+}
+.comLeft .comText button {
+    font-size: 18px;
+    border-radius: 5px;
+    width: 30%;
+    color: #fff;
+    padding: 15px 30px;
+    background: #2D74FF;
+    margin-bottom: 15px;
+    border: none;
+}
+.comRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    flex: 1;
+}
+.comRight img {
+    width: 75%;
 }
 
-.s1 {
-    color: red;
-}
-.s2 {
-    color: orange;
-}
-.s3 {
-    color: green;
-}
-.s4 {
-    color: blue;
-}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 576px) {
+    .menu {
+        height: 10vh;
+        padding: 0 25px !important;
+    }
     .menu  h1 {
         font-size: 25px;
-        color: wheat;
+        color: #4a45af;
     }
-    nav ul {
+    ul {
+        flex-direction: column;
         width: 100%;
         position: absolute;
         background: #4a45af;
-        top: 75px;
+        top: 100%;
         right: 0;
         z-index: 2;
     }
-    nav ul li{
-        display: block;
+    ul li{
+        height: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -259,29 +234,53 @@ h2 {
     .label {
         margin: 15px;
     }
-    .page2 {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: auto;
-    }
-    .secmain {
-        display: flex;
-        flex-flow: column;
+
+    .community {
         height: auto;
-        height: 100%;
+        min-height: 60vh;
+        flex-direction: column-reverse;
     }
-    .secphoto img {
+    .comLeft .comText {
+        width: 95%;
+    }
+    .comLeft .comText p {
+        font-size: 24px;
+        color: #5148fd;
+        margin-bottom: 10px;
+    }
+    .comLeft .comText span {
+        font-size: 14px;
+        color: grey;
+        margin-bottom: 15px;
+    }
+    .comLeft .comText h3 {
+        font-size: 24px;
+        color: #262626;
+        margin-bottom: 10px;
+    }
+    .comLeft .comText button {
+        font-size: 15px;
+        width: 80%;
+        padding: 10px 20px;
+    }
+    .comRight {
+        padding: 15px 0 0 0;
+    }
+    .comRight img {
         width: 100%;
-        align-self: center;
-        height: 80%;
     }
-    .skills img {
-        height: 250px;
+
+
+
+    body.menuT ul li a {
+        color: #fff !important;
     }
 }
+
+
+
+
+/* DarkMode */
 .checkbox {
     opacity: 0;
     position: absolute;
@@ -294,7 +293,7 @@ h2 {
     background-color: rgb(49, 49, 49);
     padding: 2px;
     height: 26px;
-    width: 50px;
+    width: 49px;
     display: flex;
     position: relative;
     align-items: center;
@@ -314,18 +313,20 @@ h2 {
     background-color: white;
     border-radius: 50%;
     top: 2px;
-    left: 2px;
-    transition: 0.2s linear;
+    left: 1px;
+    transition: 0.3s linear;
 }
 .checkbox:checked + .label .ball {
     transform: translateX(24px);
 }
 *.dark {
-    color: wheat;
+    color: white;
+}
+menu.dark {
+    background: #262626 !important;
 }
 body.dark {
     background-color: #262626;
+    color: #fff !important;
 }
-body.menuT ul li a {
-    color: wheat;
-}
+
